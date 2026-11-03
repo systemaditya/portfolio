@@ -1,0 +1,1645 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aditya Varma Dantuluri — Release Management &amp; DevOps | CI/CD | IT Security</title>
+<meta name="description" content="Aditya Varma Dantuluri helps enterprise teams deliver software releases reliably: 5+ years of release management, CI/CD and DevOps across banking and healthcare, with release success improved from 73% to 98%. Now pursuing a Master of IT Security (AI) at Ontario Tech University.">
+<meta name="author" content="Aditya Varma Dantuluri">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#141415" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://aditya-varma-dantuluri.vercel.app/">
+<!-- Social link previews (LinkedIn, Slack, X, etc.). Absolute URLs only: crawlers do not resolve relative paths. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aditya Varma Dantuluri — Portfolio">
+<meta property="og:locale" content="en_CA">
+<meta property="og:url" content="https://aditya-varma-dantuluri.vercel.app/">
+<meta property="og:title" content="Aditya Varma Dantuluri — Release Management &amp; DevOps | CI/CD | IT Security">
+<meta property="og:description" content="I help enterprise teams deliver software releases reliably across banking and healthcare. Release success improved from 73% to 98%; now expanding into cybersecurity and AI-driven security automation.">
+<meta property="og:image" content="https://aditya-varma-dantuluri.vercel.app/og-image.png?v=2">
+<meta property="og:image:secure_url" content="https://aditya-varma-dantuluri.vercel.app/og-image.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="Aditya Varma Dantuluri, Release Manager: release success 73% to 98%, zero production issues for three quarters, 5+ years in banking and healthcare.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aditya Varma Dantuluri — Release Management &amp; DevOps | CI/CD | IT Security">
+<meta name="twitter:description" content="I help enterprise teams deliver software releases reliably across banking and healthcare. Release success improved from 73% to 98%; now expanding into cybersecurity and AI-driven security automation.">
+<meta name="twitter:image" content="https://aditya-varma-dantuluri.vercel.app/og-image.png?v=2">
+<meta name="twitter:image:alt" content="Aditya Varma Dantuluri, Release Manager: release success 73% to 98%, zero production issues for three quarters, 5+ years in banking and healthcare.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c1c1e'/%3E%3Ctext x='30' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='%235cb884' text-anchor='middle'%3EAV%3C/text%3E%3Ccircle cx='52' cy='40' r='4' fill='%23f05a74'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aditya Varma Dantuluri",
+  "jobTitle": "Release Manager",
+  "url": "https://aditya-varma-dantuluri.vercel.app/",
+  "image": "https://aditya-varma-dantuluri.vercel.app/og-image.png?v=2",
+  "description": "Release Manager with 5+ years of enterprise experience in release management, CI/CD, deployment coordination and DevOps across banking and healthcare.",
+  "email": "mailto:varmadantuluri510@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Ajax", "addressRegion": "ON", "addressCountry": "CA" },
+  "sameAs": ["https://www.linkedin.com/in/avd", "https://github.com/systemaditya"],
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Birla Institute of Technology and Science, Pilani" },
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "Ontario Tech University" },
+  "knowsAbout": ["Release Management", "CI/CD", "DevOps", "Azure DevOps", "Jenkins", "Bamboo", "UrbanCode Deploy", "Change Management", "ITIL", "HIPAA Compliance", "IT Security", "Security Automation", "OWASP ZAP", "Python", "SQL", "Shell Scripting"],
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "name": "Microsoft Certified: Azure Developer Associate (AZ-204)", "url": "https://learn.microsoft.com/api/credentials/share/en-us/AdityaVarmaDantuluri-5189/FF2FA516B82326F7?sharingId=C4B001FE9E05B9C2" },
+    { "@type": "EducationalOccupationalCredential", "name": "Microsoft Certified: Azure Fundamentals (AZ-900)", "url": "https://learn.microsoft.com/api/credentials/share/en-us/AdityaVarmaDantuluri-5189/478A1BFE521F0804?sharingId=C4B001FE9E05B9C2" }
+  ]
+}
+</script>
+<script>
+  // Apply saved theme before paint to avoid a flash.
+  try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<style>
+:root {
+  /* Palette: charcoal black (ink & dark surfaces), forest green (primary accent), crimson red (sparing highlight). */
+  --bg: #f7f7f5;
+  --bg-alt: #efefec;
+  --surface: #ffffff;
+  --surface-2: #f4f4f1;
+  --text: #1c1c1e;
+  --text-2: #3a3a3d;
+  --muted: #5f6064;
+  --border: #e3e3df;
+  --border-strong: #cbcbc6;
+  --accent: #1f5e3b;
+  --accent-strong: #174a2e;
+  --accent-soft: #e6efe9;
+  --accent-ink: #ffffff;
+  --crimson: #b3123a;
+  --crimson-soft: #f8e5ea;
+  --glow: rgba(31, 94, 59, .13);
+  --good: #1f7a45;
+  --shadow-sm: 0 1px 2px rgba(28, 28, 30, .05);
+  --shadow: 0 1px 2px rgba(28, 28, 30, .04), 0 8px 24px -12px rgba(28, 28, 30, .14);
+  --shadow-lg: 0 2px 4px rgba(28, 28, 30, .04), 0 24px 48px -20px rgba(28, 28, 30, .24);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --font: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --container: 1160px;
+  --gutter: 24px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141415; --bg-alt: #18181a; --surface: #1e1e20; --surface-2: #242427;
+    --text: #ededeb; --text-2: #c9c9c6; --muted: #9b9b97; --border: #2c2c2f; --border-strong: #3c3c40;
+    --accent: #5cb884; --accent-strong: #7fcf9f; --accent-soft: rgba(92, 184, 132, .12); --accent-ink: #0d1f14;
+    --crimson: #f05a74; --crimson-soft: rgba(240, 90, 116, .12);
+    --glow: rgba(92, 184, 132, .14); --good: #5cb884;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.3); --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px -12px rgba(0,0,0,.6);
+    --shadow-lg: 0 2px 4px rgba(0,0,0,.3), 0 30px 60px -20px rgba(0,0,0,.7);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141415; --bg-alt: #18181a; --surface: #1e1e20; --surface-2: #242427;
+  --text: #ededeb; --text-2: #c9c9c6; --muted: #9b9b97; --border: #2c2c2f; --border-strong: #3c3c40;
+  --accent: #5cb884; --accent-strong: #7fcf9f; --accent-soft: rgba(92, 184, 132, .12); --accent-ink: #0d1f14;
+  --crimson: #f05a74; --crimson-soft: rgba(240, 90, 116, .12);
+  --glow: rgba(92, 184, 132, .14); --good: #5cb884;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.3); --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px -12px rgba(0,0,0,.6);
+  --shadow-lg: 0 2px 4px rgba(0,0,0,.3), 0 30px 60px -20px rgba(0,0,0,.7);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: var(--font); font-size: 16px; line-height: 1.6;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+img, svg, canvas { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+p { margin: 0; }
+h1, h2, h3, h4 { margin: 0; line-height: 1.15; letter-spacing: -0.02em; font-weight: 600; }
+ul { margin: 0; padding: 0; list-style: none; }
+button, input, textarea { font: inherit; color: inherit; }
+::selection { background: var(--accent); color: var(--accent-ink); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+.skip { position: absolute; left: 16px; top: -60px; z-index: 100; background: var(--text); color: var(--bg); padding: 10px 16px; border-radius: 8px; font-weight: 500; transition: top .2s; }
+.skip:focus { top: 12px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+.mono { font-family: var(--mono); }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  height: 46px; padding: 0 20px; border-radius: 999px; border: 1px solid transparent;
+  font-weight: 500; font-size: 15px; letter-spacing: -0.005em; cursor: pointer; white-space: nowrap;
+  transition: transform .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease, color .2s;
+}
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn-primary { background: var(--text); color: var(--bg); box-shadow: var(--shadow); }
+.btn-primary:hover { transform: translateY(-1px); box-shadow: var(--shadow-lg); }
+.btn-accent { background: var(--accent); color: var(--accent-ink); }
+.btn-accent:hover { background: var(--accent-strong); transform: translateY(-1px); }
+.btn-ghost { background: var(--surface); border-color: var(--border); color: var(--text); }
+.btn-ghost:hover { border-color: var(--border-strong); transform: translateY(-1px); }
+.btn-sm { height: 38px; padding: 0 16px; font-size: 14px; }
+.icon-btn {
+  width: 38px; height: 38px; display: inline-grid; place-items: center; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface); cursor: pointer; color: var(--text-2);
+  transition: border-color .2s, color .2s, transform .2s;
+}
+.icon-btn:hover { border-color: var(--border-strong); color: var(--text); }
+.icon-btn svg { width: 18px; height: 18px; }
+.icon-btn-lg { width: 46px; height: 46px; }
+.icon-btn-lg:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-1px); }
+.hero-social { display: inline-flex; gap: 8px; }
+
+/* ---------- Header ---------- */
+.header {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid transparent; transition: border-color .3s, background-color .3s;
+}
+.header.scrolled { border-bottom-color: var(--border); }
+.nav { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 16px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; letter-spacing: -0.01em; }
+.brand-mark {
+  width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center;
+  background: var(--text); color: var(--bg); font-size: 13px; font-weight: 700; letter-spacing: 0;
+  position: relative;
+}
+.brand-mark::after { content: ""; position: absolute; right: -3px; bottom: -3px; width: 9px; height: 9px; border-radius: 50%; background: var(--crimson); border: 2px solid var(--bg); }
+.brand-name { font-size: 15px; }
+.nav-links { display: flex; align-items: center; gap: 2px; }
+.nav-links a {
+  font-size: 14px; color: var(--muted); padding: 8px 12px; border-radius: 999px; transition: color .2s, background-color .2s;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-links a.active { color: var(--text); background: var(--surface-2); }
+.nav-actions { display: flex; align-items: center; gap: 8px; }
+.menu-btn { display: none; }
+.icon-sun { display: none; }
+:root[data-theme="dark"] .icon-sun { display: block; }
+:root[data-theme="dark"] .icon-moon { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .icon-sun { display: block; }
+  :root:not([data-theme="light"]) .icon-moon { display: none; }
+}
+
+/* ---------- Sections ---------- */
+section { position: relative; }
+.section { padding: 112px 0; }
+.section-alt { background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.section-head { max-width: 680px; margin-bottom: 56px; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--mono); font-size: 12.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--accent);
+  margin-bottom: 16px;
+}
+.eyebrow::before { content: ""; width: 18px; height: 2px; border-radius: 2px; background: var(--crimson); }
+.crimson { color: var(--crimson); }
+.h2 { font-size: clamp(30px, 4vw, 44px); }
+.lede { margin-top: 16px; font-size: 18px; color: var(--muted); max-width: 620px; }
+
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.chip {
+  display: inline-flex; align-items: center; height: 28px; padding: 0 11px; border-radius: 999px;
+  font-size: 13px; color: var(--text-2); background: var(--surface-2); border: 1px solid var(--border);
+  white-space: nowrap;
+}
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* ---------- Hero ---------- */
+.hero { padding: 72px 0 96px; overflow: hidden; }
+.hero::before {
+  content: ""; position: absolute; inset: -20% -10% auto auto; width: 720px; height: 720px; border-radius: 50%;
+  background: radial-gradient(closest-side, var(--glow), transparent 70%); pointer-events: none; z-index: 0;
+}
+.hero::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 56px 56px; opacity: .45;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 75%);
+}
+.hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.15fr .85fr; gap: 64px; align-items: center; }
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 10px; padding: 6px 14px 6px 8px; border-radius: 999px;
+  background: var(--surface); border: 1px solid var(--border); font-size: 13.5px; color: var(--text-2); box-shadow: var(--shadow-sm);
+}
+.hero-tag .pill { font-family: var(--mono); font-size: 11.5px; padding: 3px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 500; }
+.hero .hero-title { margin-top: 28px; font-size: clamp(40px, 5.4vw, 64px); }
+.hero-position { margin-top: 16px; font-size: clamp(19px, 2vw, 23px); font-weight: 500; color: var(--text-2); letter-spacing: -0.015em; }
+.hero-position .sep { color: var(--border-strong); margin: 0 6px; font-weight: 400; }
+.hero-position .accent { color: var(--accent); }
+/* Above-the-fold content animates with CSS only, so it paints immediately even before JS runs. */
+.rise { animation: rise .8s cubic-bezier(.2,.8,.2,1) both; }
+.rise-1 { animation-delay: .06s; } .rise-2 { animation-delay: .14s; } .rise-3 { animation-delay: .22s; }
+@keyframes rise { from { opacity: .001; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.hero h1.rise, .hero-sub.rise { animation-name: rise-soft; }
+@keyframes rise-soft { from { transform: translateY(12px); } to { transform: none; } }
+.hero h1 { margin-top: 10px; font-size: clamp(40px, 6vw, 68px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 600; }
+.hero h1 .accent { color: var(--accent); }
+.hero-sub { margin-top: 24px; font-size: 19px; line-height: 1.6; color: var(--text-2); max-width: 560px; }
+.hero-sub strong { color: var(--text); font-weight: 600; }
+.hero-ctas { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.hero-meta { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 10px 22px; font-size: 14px; color: var(--muted); }
+.hero-meta span { display: inline-flex; align-items: center; gap: 8px; }
+.hero-meta svg { width: 16px; height: 16px; color: var(--accent); }
+
+/* Pipeline card */
+.pipe { padding: 22px; border-radius: 20px; box-shadow: var(--shadow-lg); position: relative; }
+.pipe-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 18px; border-bottom: 1px dashed var(--border); }
+.pipe-title { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 15px; }
+.live { width: 8px; height: 8px; border-radius: 50%; background: var(--good); box-shadow: 0 0 0 0 color-mix(in srgb, var(--good) 60%, transparent); animation: ping 2.2s infinite; }
+@keyframes ping { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--good) 55%, transparent); } 80%, 100% { box-shadow: 0 0 0 10px transparent; } }
+.pipe-env { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.stages { position: relative; padding: 18px 0 8px; }
+.stages::before { content: ""; position: absolute; left: 15px; top: 34px; bottom: 30px; width: 2px; background: var(--border); }
+.stage { position: relative; display: grid; grid-template-columns: 32px 1fr auto; gap: 14px; align-items: center; padding: 10px 0; }
+.stage-dot {
+  position: relative; z-index: 1; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--surface); border: 2px solid var(--border-strong); color: transparent; transition: all .4s ease;
+}
+.stage-dot svg { width: 14px; height: 14px; }
+.stage.done .stage-dot { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.stage.active .stage-dot { border-color: var(--accent); box-shadow: 0 0 0 6px var(--accent-soft); }
+.stage.active .stage-dot::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); animation: pulse 1s ease-in-out infinite alternate; }
+@keyframes pulse { from { transform: scale(.7); opacity: .6; } to { transform: scale(1); opacity: 1; } }
+.stage-name { font-family: var(--mono); font-size: 13px; font-weight: 500; letter-spacing: .02em; }
+.stage-desc { font-size: 13.5px; color: var(--muted); }
+.stage-tool { font-size: 12px; color: var(--muted); font-family: var(--mono); text-align: right; }
+.pipe-foot { margin-top: 10px; padding: 14px 16px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--border); display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.pipe-foot-label { font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+
+/* ---------- Metrics ---------- */
+.metrics { position: relative; z-index: 1; margin-top: 80px; display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow-sm); overflow: hidden; }
+.metric { padding: 28px 28px 26px; border-left: 1px solid var(--border); }
+.metric:first-child { border-left: 0; }
+.metric-val { font-size: 40px; font-weight: 600; letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+.metric-val small { font-size: 22px; color: var(--muted); font-weight: 500; margin-left: 2px; }
+.metric-label { margin-top: 12px; font-size: 14px; color: var(--muted); line-height: 1.45; }
+
+/* ---------- About ---------- */
+.about-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 64px; align-items: start; }
+.about-copy p { font-size: 18px; color: var(--text-2); line-height: 1.75; }
+.about-copy p + p { margin-top: 20px; }
+.about-copy strong { color: var(--text); font-weight: 600; }
+.facts { margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.fact { padding: 16px 18px; border-radius: var(--radius-sm); background: var(--surface); border: 1px solid var(--border); }
+.fact dt { font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.fact dd { margin: 6px 0 0; font-weight: 500; font-size: 15px; }
+.edu { display: grid; gap: 14px; }
+.edu-title { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 2px; }
+.edu-card { padding: 22px; display: grid; grid-template-columns: 44px 1fr; gap: 16px; }
+.edu-icon { width: 44px; height: 44px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; }
+.edu-icon svg { width: 22px; height: 22px; }
+.edu-card h3 { font-size: 16px; letter-spacing: -0.01em; }
+.edu-card .org { margin-top: 4px; font-size: 14.5px; color: var(--text-2); }
+.edu-card .when { margin-top: 8px; font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
+.badge-now { display: inline-flex; align-items: center; gap: 6px; margin-left: 8px; font-family: var(--mono); font-size: 11px; color: var(--accent); background: var(--accent-soft); padding: 2px 8px; border-radius: 999px; vertical-align: 2px; }
+
+/* ---------- Experience ---------- */
+.timeline { position: relative; display: grid; gap: 24px; }
+.role { display: grid; grid-template-columns: 220px 1fr; gap: 40px; padding: 36px; }
+.role-side .when { font-family: var(--mono); font-size: 13px; color: var(--muted); }
+.role-side .company { margin-top: 12px; display: flex; align-items: center; gap: 10px; font-weight: 600; }
+.company-logo { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--surface-2); border: 1px solid var(--border); font-family: var(--mono); font-size: 11px; font-weight: 500; color: var(--text-2); }
+.role-side .domain { margin-top: 10px; font-size: 13.5px; color: var(--muted); }
+.role h3 { font-size: 24px; }
+.role-list { margin-top: 22px; display: grid; gap: 12px; }
+.inline-link { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.inline-link:hover { text-decoration-thickness: 2px; }
+.role-list li { position: relative; padding-left: 22px; color: var(--text-2); }
+.role-list li::before { content: ""; position: absolute; left: 2px; top: .7em; width: 7px; height: 7px; border-radius: 2px; background: var(--accent); opacity: .75; }
+.role-tools { margin-top: 24px; padding-top: 20px; border-top: 1px dashed var(--border); display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.role-tools .label { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-right: 6px; text-transform: uppercase; letter-spacing: .08em; }
+
+.inline-cta { margin-top: 28px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 18px 22px 18px 26px; border-radius: var(--radius); border: 1px dashed var(--border-strong); }
+.inline-cta p { color: var(--text-2); font-size: 15px; }
+
+/* ---------- Skills ---------- */
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.skill { padding: 26px; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+.skill:hover { transform: translateY(-3px); border-color: var(--border-strong); box-shadow: var(--shadow); }
+.skill-head { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+.skill-icon { width: 38px; height: 38px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; flex: none; }
+.skill-icon svg { width: 19px; height: 19px; }
+.skill h3 { font-size: 16.5px; letter-spacing: -0.01em; }
+.skill.wide { grid-column: span 2; }
+
+/* ---------- Projects ---------- */
+.projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.project { padding: 32px; display: flex; flex-direction: column; transition: transform .25s ease, box-shadow .25s ease, border-color .25s; }
+.project:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--border-strong); }
+.project.featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding: 40px; background: linear-gradient(135deg, var(--surface) 0%, var(--surface) 55%, var(--accent-soft) 100%); }
+.project-kicker { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
+.project-kicker .type { color: var(--accent); text-transform: uppercase; letter-spacing: .08em; }
+.project h3 { margin-top: 14px; font-size: 24px; }
+.project.featured h3 { font-size: 30px; }
+.project-summary { margin-top: 14px; color: var(--text-2); }
+.csteps { margin-top: 22px; display: grid; gap: 16px; }
+.cstep { display: grid; grid-template-columns: 96px 1fr; gap: 16px; font-size: 15px; }
+.cstep dt { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); padding-top: 3px; }
+.cstep dd { margin: 0; color: var(--text-2); }
+.project .chips { margin-top: auto; padding-top: 24px; }
+.project-link { margin-top: 18px; display: inline-flex; align-items: center; gap: 6px; font-size: 14.5px; font-weight: 500; color: var(--accent); }
+.project-link svg { width: 16px; height: 16px; transition: transform .2s; }
+.project-link:hover svg { transform: translateX(3px); }
+.evidence { display: grid; gap: 14px; align-content: start; }
+.outcome-tile { padding: 22px; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); }
+.outcome-kicker { font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 8px; }
+.evidence .outcome-val { font-size: 26px; }
+
+/* Before/after chart: bar height = value %, grown in when the card is revealed. */
+.chart { margin: 0; padding: 22px 22px 18px; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); }
+.chart-title { font-weight: 600; font-size: 16px; }
+.chart-title span { display: block; font-family: var(--mono); font-weight: 400; font-size: 11.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin-bottom: 4px; }
+.chart-plot { position: relative; height: 200px; margin: 30px 0 0 44px; }
+.gridline { position: absolute; left: 0; right: 0; bottom: calc(var(--y) * 1%); border-top: 1px dashed var(--border); }
+.gridline i { position: absolute; left: -44px; top: -9px; width: 38px; text-align: right; font-style: normal; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.bars { position: absolute; inset: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; padding: 0 12%; align-items: end; }
+.bar-v { position: relative; height: calc(var(--h) * 1%); border-radius: 8px 8px 2px 2px; transform-origin: bottom; transition: transform 1.1s cubic-bezier(.2,.8,.2,1) .15s; }
+.bar-v b { position: absolute; left: 0; right: 0; top: -26px; text-align: center; font-family: var(--mono); font-size: 15px; font-weight: 600; }
+.bar-v.is-before { background: linear-gradient(180deg, var(--crimson), color-mix(in srgb, var(--crimson) 55%, transparent)); }
+.bar-v.is-before b { color: var(--crimson); }
+.bar-v.is-after { background: linear-gradient(180deg, var(--accent), color-mix(in srgb, var(--accent) 55%, transparent)); }
+.bar-v.is-after b { color: var(--accent); }
+body:not(.no-js) .reveal:not(.in) .bar-v { transform: scaleY(0); }
+.chart--four .bars { grid-template-columns: repeat(4, 1fr); gap: 14px; padding: 0 4%; }
+.chart--four .bar-v { min-height: 3px; }
+.chart--four .chart-labels { grid-template-columns: repeat(4, 1fr); gap: 14px; padding: 10px 4% 0; font-size: 12px; line-height: 1.35; }
+.chart-legend { display: flex; gap: 16px; margin-top: 10px; font-size: 12.5px; color: var(--muted); }
+.chart-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.chart-legend span::before { content: ""; width: 10px; height: 10px; border-radius: 3px; }
+.chart-legend .off::before { background: var(--crimson); }
+.chart-legend .on::before { background: var(--accent); }
+.project-links { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.project-links .project-link { margin-top: 0; }
+.chart-labels { margin-left: 44px; padding: 10px 12% 0; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; text-align: center; font-size: 13px; color: var(--muted); }
+.outcome-val { font-size: 34px; font-weight: 600; letter-spacing: -0.03em; line-height: 1.05; }
+.outcome-label { margin-top: 8px; font-size: 14px; color: var(--muted); }
+
+/* ---------- Showcase ---------- */
+.tabs { display: inline-flex; padding: 4px; gap: 4px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); margin-bottom: 24px; max-width: 100%; overflow-x: auto; }
+.tab { height: 38px; padding: 0 18px; border-radius: 999px; border: 0; background: transparent; color: var(--muted); font-size: 14.5px; font-weight: 500; cursor: pointer; white-space: nowrap; transition: background-color .2s, color .2s; }
+.tab:hover { color: var(--text); }
+.tab[aria-selected="true"] { background: var(--text); color: var(--bg); }
+.panel { padding: 36px; }
+.panel[hidden] { display: none; }
+.panel-intro { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: 28px; }
+.panel-intro h3 { font-size: 22px; }
+.panel-intro p { margin-top: 6px; color: var(--muted); max-width: 560px; font-size: 15px; }
+.note { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+
+.lifecycle { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; position: relative; }
+.lc-step {
+  position: relative; text-align: left; padding: 16px; border-radius: 12px; border: 1px solid var(--border); background: var(--surface-2);
+  cursor: pointer; transition: border-color .2s, background-color .2s, transform .2s;
+}
+.lc-step:hover { border-color: var(--border-strong); transform: translateY(-2px); }
+.lc-step[aria-selected="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.lc-num { font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
+.lc-name { margin-top: 6px; font-family: var(--mono); font-weight: 500; font-size: 15px; letter-spacing: .02em; }
+.lc-step[aria-selected="true"] .lc-name { color: var(--accent); }
+.lc-sub { margin-top: 2px; font-size: 13px; color: var(--muted); }
+.lc-detail { margin-top: 20px; padding: 28px; border-radius: 14px; border: 1px solid var(--border); background: var(--surface); display: grid; grid-template-columns: 1fr 1fr; gap: 32px; min-height: 196px; }
+.lc-detail h4 { font-size: 19px; }
+.lc-detail .lc-what { margin-top: 14px; display: grid; gap: 10px; }
+.lc-detail .lc-what li { position: relative; padding-left: 22px; color: var(--text-2); font-size: 15px; }
+.lc-detail .lc-what li::before { content: ""; position: absolute; left: 0; top: .45em; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--accent); }
+.lc-side { border-left: 1px dashed var(--border); padding-left: 32px; }
+.lc-side .label { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 12px; }
+.lc-side .gate { margin-top: 22px; padding: 14px 16px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--border); font-size: 14px; color: var(--text-2); }
+.lc-side .gate b { color: var(--text); font-weight: 600; }
+.fade-swap { animation: swap .35s ease; }
+@keyframes swap { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+.stego { display: grid; grid-template-columns: 340px 1fr; gap: 28px; align-items: start; }
+.stego-controls label { display: block; font-size: 13px; font-weight: 500; color: var(--text-2); margin-bottom: 8px; }
+.stego-controls textarea {
+  width: 100%; min-height: 104px; resize: vertical; padding: 12px 14px; border-radius: 10px;
+  border: 1px solid var(--border); background: var(--surface-2); font-size: 15px; line-height: 1.5;
+}
+.stego-controls textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.cap { margin-top: 8px; display: flex; justify-content: space-between; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.cap.over { color: var(--crimson); }
+.stego-actions { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px; }
+.file-label { cursor: pointer; }
+.file-label input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.file-label:focus-within { outline: 2px solid var(--accent); outline-offset: 3px; }
+.stego-out { margin-top: 20px; padding: 14px 16px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface-2); font-size: 14px; color: var(--text-2); min-height: 52px; word-break: break-word; }
+.stego-out .k { font-family: var(--mono); font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; display: block; margin-bottom: 4px; }
+.stego-notes { margin-top: 16px; font-size: 13.5px; color: var(--text-2); }
+.stego-notes .k { font-family: var(--mono); font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; }
+.stego-notes ul { display: grid; gap: 8px; }
+.stego-notes li { position: relative; padding-left: 16px; line-height: 1.5; }
+.stego-notes li::before { content: ""; position: absolute; left: 0; top: .6em; width: 6px; height: 6px; border-radius: 50%; background: var(--crimson); }
+.stego-notes b { color: var(--text); font-weight: 600; }
+.canvases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.cv figure { margin: 0; }
+.cv canvas { width: 100%; height: auto; aspect-ratio: 3 / 2; border-radius: 10px; border: 1px solid var(--border); background: var(--surface-2); image-rendering: pixelated; }
+.cv figcaption { margin-top: 10px; font-size: 13px; color: var(--muted); }
+.cv figcaption b { display: block; color: var(--text); font-weight: 500; font-size: 14px; }
+.stego-stats { margin-top: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.stat { padding: 14px 16px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface-2); }
+.stat .v { font-family: var(--mono); font-size: 18px; font-weight: 500; }
+.stat .l { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+
+/* ---------- Credentials ---------- */
+.creds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.cred { padding: 28px; position: relative; overflow: hidden; }
+.cred::after { content: ""; position: absolute; right: -40px; top: -40px; width: 140px; height: 140px; border-radius: 50%; background: radial-gradient(closest-side, var(--glow), transparent); }
+.cred-icon { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); }
+.cred-icon svg { width: 22px; height: 22px; }
+.cred-icon.is-award { background: var(--crimson-soft); color: var(--crimson); }
+.cred-type { margin-top: 22px; font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.cred h3 { margin-top: 8px; font-size: 19px; line-height: 1.3; letter-spacing: -0.015em; }
+.cred p { margin-top: 8px; font-size: 14.5px; color: var(--muted); }
+.cred-link { position: relative; z-index: 2; display: flex; align-items: center; gap: 6px; width: fit-content; margin-top: 14px; font-size: 14px; font-weight: 500; color: var(--accent); }
+.cred-link svg { width: 15px; height: 15px; transition: transform .2s; }
+.cred-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.cred-link:hover svg { transform: translate(2px, -2px); }
+.cred .code { display: inline-block; margin-top: 16px; font-family: var(--mono); font-size: 12.5px; padding: 4px 10px; border-radius: 6px; background: var(--surface-2); border: 1px solid var(--border); color: var(--text-2); }
+
+
+/* ---------- Resume CTA ---------- */
+/* The band stays dark in both themes, so its colours are fixed rather than tokenised. */
+.resume-band { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; padding: 44px; border-radius: 24px; background: linear-gradient(135deg, #1c1c1e 0%, #1f2120 55%, #15291c 100%); color: #f2f2f0; border: 1px solid rgba(92, 184, 132, .2); position: relative; overflow: hidden; }
+.resume-band::before { content: ""; position: absolute; right: -120px; top: -160px; width: 460px; height: 460px; border-radius: 50%; background: radial-gradient(closest-side, rgba(92, 184, 132, .26), transparent); pointer-events: none; }
+.resume-band::after { content: ""; position: absolute; left: -140px; bottom: -200px; width: 380px; height: 380px; border-radius: 50%; background: radial-gradient(closest-side, rgba(240, 90, 116, .14), transparent); pointer-events: none; }
+.resume-band .eyebrow { color: #7fcf9f; }
+.resume-band .eyebrow::before { background: #f05a74; }
+.resume-band h2 { font-size: clamp(26px, 3.4vw, 36px); position: relative; }
+.resume-band p { margin-top: 12px; color: #bfbfbb; max-width: 560px; position: relative; }
+.resume-actions { display: flex; flex-wrap: wrap; gap: 12px; position: relative; z-index: 1; }
+.resume-band .btn-light { background: #ffffff; color: #1c1c1e; }
+.resume-band .btn-light:hover { transform: translateY(-1px); }
+.resume-band .btn-outline { border-color: rgba(255, 255, 255, .28); color: #f2f2f0; background: transparent; }
+.resume-band .btn-outline:hover { border-color: #ffffff; transform: translateY(-1px); }
+.resume-file { margin-top: 20px; display: inline-flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 12.5px; color: #9a9a96; position: relative; }
+
+/* ---------- Contact ---------- */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.contact-copy .h2 { font-size: clamp(32px, 4.6vw, 52px); }
+.contact-list { display: grid; gap: 14px; }
+.contact-item { display: grid; grid-template-columns: 48px 1fr auto; gap: 16px; align-items: center; padding: 20px 22px; transition: border-color .2s, transform .2s, box-shadow .2s; }
+a.contact-item:hover { border-color: var(--border-strong); transform: translateY(-2px); box-shadow: var(--shadow); }
+.contact-icon { width: 48px; height: 48px; border-radius: 12px; display: grid; place-items: center; background: var(--surface-2); border: 1px solid var(--border); color: var(--text); }
+.contact-icon svg { width: 20px; height: 20px; }
+.contact-item .k { font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.contact-item .v { margin-top: 2px; font-weight: 500; font-size: 16px; word-break: break-all; }
+.contact-item .go { color: var(--muted); }
+.contact-item .go svg { width: 18px; height: 18px; }
+.copy-btn { position: relative; }
+.toast { position: absolute; right: 0; bottom: calc(100% + 8px); padding: 6px 10px; border-radius: 8px; background: var(--text); color: var(--bg); font-size: 12px; white-space: nowrap; opacity: 0; transform: translateY(4px); transition: all .2s; pointer-events: none; }
+.toast.show { opacity: 1; transform: none; }
+
+/* ---------- Interactions: project search + filters, expandable cards (assets/interactions.js) ---------- */
+[hidden] { display: none !important; }
+.project-tools { display: grid; gap: 14px; margin: -24px 0 28px; }
+.search-field { position: relative; display: flex; align-items: center; max-width: 520px; }
+.search-field svg { position: absolute; left: 16px; width: 18px; height: 18px; color: var(--muted); pointer-events: none; }
+.search-field input { width: 100%; height: 46px; padding: 0 16px 0 44px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); font-size: 15px; transition: border-color .2s, box-shadow .2s; }
+.search-field input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.topic-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.topic-chip { height: 34px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); color: var(--text-2); font-size: 13.5px; cursor: pointer; transition: background-color .2s, color .2s, border-color .2s, transform .2s; }
+.topic-chip:hover { border-color: var(--border-strong); color: var(--text); transform: translateY(-1px); }
+.topic-chip[aria-pressed="true"] { background: var(--text); border-color: var(--text); color: var(--bg); }
+.filter-status { font-size: 13.5px; color: var(--muted); min-height: 1.5em; }
+.link-btn { background: none; border: 0; padding: 0; color: var(--accent); font: inherit; font-weight: 500; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.projects-empty { margin-top: 4px; padding: 28px; text-align: center; color: var(--muted); border: 1px dashed var(--border-strong); border-radius: var(--radius); }
+.project.is-filtering-in { animation: cardIn .45s cubic-bezier(.2,.8,.2,1) both; }
+@keyframes cardIn { from { opacity: 0; transform: translateY(14px) scale(.98); } }
+.expand-toggle { margin-top: 16px; align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; background: none; border: 0; padding: 0; color: var(--accent); font-size: 14.5px; font-weight: 500; cursor: pointer; }
+.expand-toggle svg { width: 16px; height: 16px; transition: transform .3s cubic-bezier(.2,.8,.2,1); }
+.expand-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+[data-expandable]:not(.is-expanded) .is-extra { display: none; }
+[data-expandable].is-expanded .is-extra { animation: extraIn .4s cubic-bezier(.2,.8,.2,1) both; }
+@keyframes extraIn { from { opacity: 0; transform: translateY(-6px); } }
+
+/* ---------- Motion system (assets/motion.js). Decorative only; switched off for reduced motion. ---------- */
+.scroll-progress { position: fixed; z-index: 60; top: 0; left: 0; right: 0; height: 3px; transform-origin: 0 50%; transform: scaleX(0); background: linear-gradient(90deg, var(--accent), var(--crimson)); pointer-events: none; }
+
+/* Headings revealed word by word from behind a mask. */
+.split .w { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .1em; margin-bottom: -.1em; }
+.split .w > span { display: inline-block; transform: translateY(108%); transition: transform .9s cubic-bezier(.2,.8,.2,1); transition-delay: calc(var(--i, 0) * 55ms); }
+.split.is-in .w > span { transform: none; }
+
+/* Lists and chip groups fade up one item at a time. */
+.stagger > * { opacity: 0; transform: translateY(10px); transition: opacity .5s ease, transform .6s cubic-bezier(.2,.8,.2,1); transition-delay: calc(var(--i, 0) * 45ms + 120ms); }
+.stagger.is-in > * { opacity: 1; transform: none; }
+
+/* Section label line draws in. */
+.reveal .eyebrow::before { transform: scaleX(0); transform-origin: left; transition: transform .7s cubic-bezier(.2,.8,.2,1) .2s; }
+.reveal.in .eyebrow::before, .no-js .reveal .eyebrow::before { transform: none; }
+
+/* Hero: drifting grid, pointer spotlight, slow glow drift, floating pipeline card. */
+.hero.has-bg::after { display: none; }
+.hero-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 75%); }
+.hero-bg-grid { position: absolute; inset: -56px; opacity: .45;
+  background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 56px 56px; animation: gridDrift 22s linear infinite; }
+@keyframes gridDrift { to { transform: translate(56px, 56px); } }
+.hero-spot { position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0; transition: opacity .6s ease;
+  background: radial-gradient(560px circle at var(--mx, 70%) var(--my, 20%), var(--glow), transparent 62%); }
+.hero:hover .hero-spot { opacity: 1; }
+.hero::before { animation: glowDrift 18s ease-in-out infinite alternate; }
+@keyframes glowDrift { to { transform: translate(-90px, 60px) scale(1.12); } }
+.pipe.rise { animation: rise .8s cubic-bezier(.2,.8,.2,1) .14s both, floaty 8s ease-in-out 1.4s infinite; }
+@keyframes floaty { 50% { transform: translateY(-8px); } }
+
+/* Tools marquee between the hero and About. */
+.marquee { position: relative; overflow: hidden; padding: 18px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--surface);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.marquee-track { display: flex; width: max-content; animation: marquee 48s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-group { display: flex; align-items: center; gap: 44px; padding-right: 44px; margin: 0; list-style: none; }
+.marquee-item { display: inline-flex; align-items: center; gap: 12px; font-family: var(--mono); font-size: 14px; color: var(--text-2); white-space: nowrap; }
+.marquee-item::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.marquee-item:nth-child(3n)::before { background: var(--crimson); }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* Cards: 3D tilt toward the pointer with a soft spotlight (fine pointers only). */
+.tilt { position: relative; }
+.tilt.is-tilting { transition: transform .12s ease-out, box-shadow .25s, border-color .25s; }
+.tilt-spot { position: absolute; inset: 0; z-index: 1; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .35s;
+  background: radial-gradient(360px circle at var(--sx, 50%) var(--sy, 50%), color-mix(in srgb, var(--accent) 13%, transparent), transparent 60%); }
+.tilt:hover .tilt-spot { opacity: 1; }
+.skill-icon, .contact-icon, .cred-icon, .edu-icon { transition: transform .35s cubic-bezier(.2,.8,.2,1); }
+.skill:hover .skill-icon, .cred:hover .cred-icon, .edu-card:hover .edu-icon, .contact-item:hover .contact-icon { transform: rotate(-8deg) scale(1.08); }
+
+/* Buttons: light sweep on hover; magnetic pull is applied inline by motion.js. */
+.btn-shine { position: relative; overflow: hidden; isolation: isolate; }
+.btn-shine::after { content: ""; position: absolute; top: 0; bottom: 0; left: -70%; width: 50%; z-index: -1; transform: skewX(-20deg);
+  background: linear-gradient(105deg, transparent, color-mix(in srgb, var(--accent) 38%, transparent), transparent); transition: left .75s cubic-bezier(.2,.8,.2,1); }
+.btn-shine:hover::after { left: 130%; }
+
+/* Impact tiles: accent line sweeps across on hover. */
+.metric { position: relative; transition: background-color .3s; }
+.metric::after { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px; background: linear-gradient(90deg, var(--accent), var(--crimson)); transform: scaleX(0); transform-origin: left; transition: transform .55s cubic-bezier(.2,.8,.2,1); }
+.metric:hover { background: var(--surface-2); }
+.metric:hover::after { transform: none; }
+
+/* Navigation: a pill that glides to the active or hovered link. */
+.nav-links.has-indicator { position: relative; }
+.nav-links.has-indicator a { position: relative; z-index: 1; }
+.nav-links.has-indicator a.active { background: transparent; }
+.nav-indicator { position: absolute; z-index: 0; top: 50%; left: 0; height: 34px; width: 0; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--border); opacity: 0;
+  transform: translate(var(--x, 0), -50%); transition: transform .45s cubic-bezier(.2,.8,.2,1), width .45s cubic-bezier(.2,.8,.2,1), opacity .3s; }
+.nav-indicator.on { opacity: 1; }
+
+/* Experience: a rail that fills as you scroll through the roles. */
+.role { position: relative; }
+.timeline-rail, .rail-dot { display: none; }
+@media (min-width: 1260px) {
+  .timeline-rail { display: block; position: absolute; left: -44px; top: 12px; bottom: 12px; width: 2px; border-radius: 2px; background: var(--border); }
+  .timeline-rail span { position: absolute; left: 0; right: 0; top: 0; height: 100%; border-radius: inherit; background: linear-gradient(var(--accent), var(--crimson)); transform-origin: top; transform: scaleY(var(--p, 0)); }
+  .rail-dot { display: block; position: absolute; left: -50px; top: 40px; width: 14px; height: 14px; border-radius: 50%; background: var(--bg); border: 2px solid var(--border-strong); transition: border-color .4s, background-color .4s, box-shadow .4s; }
+  .role.passed .rail-dot { border-color: var(--accent); background: var(--accent); box-shadow: 0 0 0 5px var(--accent-soft); }
+}
+
+/* Résumé band: glows drift slowly. */
+.resume-band::before { animation: glowDrift 16s ease-in-out infinite alternate; }
+.resume-band::after { animation: glowDrift 20s ease-in-out infinite alternate-reverse; }
+
+/* Back to top, with a ring that fills as you scroll. */
+.to-top { position: fixed; z-index: 44; right: 24px; bottom: 24px; width: 50px; height: 50px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--text); box-shadow: var(--shadow);
+  display: grid; place-items: center; cursor: pointer; opacity: 0; transform: translateY(14px) scale(.9); pointer-events: none; transition: opacity .3s, transform .35s cubic-bezier(.2,.8,.2,1); }
+.to-top.show { opacity: 1; transform: none; pointer-events: auto; }
+.to-top:hover { transform: translateY(-2px); }
+.to-top > svg { width: 18px; height: 18px; transform: rotate(-90deg); }
+.to-top .ring { position: absolute; inset: -1px; width: 50px; height: 50px; transform: rotate(-90deg); }
+.to-top .ring circle { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; stroke-dasharray: 150.8; stroke-dashoffset: calc(150.8 * (1 - var(--p, 0))); }
+
+@media (max-width: 640px) {
+  .project-tools { margin-top: -16px; }
+  .to-top { display: none; }
+  .marquee { padding: 14px 0; }
+  .marquee-item { font-size: 13px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .split .w > span, .stagger > * { transform: none !important; opacity: 1 !important; }
+  .marquee { -webkit-mask-image: none; mask-image: none; }
+  .marquee-track { animation: none; width: 100%; justify-content: center; }
+  .marquee-group[aria-hidden="true"] { display: none; }
+  .marquee-group { flex-wrap: wrap; justify-content: center; gap: 12px 32px; max-width: var(--container); padding: 0 var(--gutter); }
+  .hero-bg-grid, .hero::before, .resume-band::before, .resume-band::after, .pipe.rise { animation: none !important; }
+}
+@media print {
+  .project-tools, .expand-toggle, .scroll-progress, .to-top, .marquee { display: none !important; }
+  [data-expandable] .is-extra { display: revert !important; }
+  .split .w > span, .stagger > * { transform: none !important; opacity: 1 !important; }
+}
+
+/* ---------- Mobile quick actions ---------- */
+.mobile-cta { display: none; }
+@media (max-width: 640px) {
+  .mobile-cta:not([hidden]) {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px; position: fixed; z-index: 40; left: 12px; right: 12px; bottom: 12px;
+    padding: 10px; border-radius: 18px; border: 1px solid var(--border);
+    background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    box-shadow: var(--shadow-lg); transform: translateY(calc(100% + 24px)); visibility: hidden;
+    transition: transform .35s cubic-bezier(.2,.8,.2,1), visibility 0s linear .35s;
+  }
+  .mobile-cta.show { transform: none; visibility: visible; transition-delay: 0s; }
+  .mobile-cta .btn { width: 100%; height: 44px; }
+  .footer { padding-bottom: 104px; }
+}
+@media print { .mobile-cta { display: none !important; } }
+
+/* ---------- Footer ---------- */
+.footer { padding: 40px 0 48px; border-top: 1px solid var(--border); }
+.footer-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
+.footer-row a:hover { color: var(--text); }
+.footer-links { display: flex; gap: 20px; }
+
+/* ---------- Motion ---------- */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.8,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
+.reveal[data-delay="1"] { transition-delay: .08s; }
+.reveal[data-delay="2"] { transition-delay: .16s; }
+.reveal[data-delay="3"] { transition-delay: .24s; }
+.no-js .reveal { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+  .reveal { opacity: 1; transform: none; }
+}
+
+@media print {
+  .reveal, .rise, .bar-v { opacity: 1 !important; transform: none !important; animation: none !important; }
+  .header, .skip, #showcase, .hero::before, .hero::after { display: none !important; }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1080px) {
+  .nav-links a { padding: 8px 9px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 56px; }
+  .pipe { max-width: 560px; }
+  .stego { grid-template-columns: 1fr; }
+}
+@media (max-width: 960px) {
+  .menu-btn { display: inline-grid; }
+  .nav-links {
+    position: absolute; top: 68px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 2px;
+    padding: 12px var(--gutter) 20px; background: var(--bg); border-bottom: 1px solid var(--border); box-shadow: var(--shadow);
+    display: none;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 12px 14px; font-size: 16px; border-radius: 10px; }
+  .nav-actions .btn-resume-text { display: none; }
+  .section { padding: 88px 0; }
+  .metrics { grid-template-columns: repeat(2, 1fr); }
+  .metric:nth-child(3) { border-left: 0; }
+  .metric:nth-child(n+3) { border-top: 1px solid var(--border); }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 44px; }
+  .role { grid-template-columns: 1fr; gap: 20px; padding: 28px; }
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .skill.wide { grid-column: span 2; }
+  .project.featured { grid-template-columns: 1fr; gap: 32px; padding: 32px; }
+  .creds { grid-template-columns: 1fr 1fr; }
+  .lifecycle { grid-template-columns: repeat(5, minmax(120px, 1fr)); overflow-x: auto; padding-bottom: 6px; }
+  .lc-detail { grid-template-columns: 1fr; gap: 24px; }
+  .lc-side { border-left: 0; padding-left: 0; border-top: 1px dashed var(--border); padding-top: 24px; }
+  .resume-band { grid-template-columns: 1fr; gap: 28px; padding: 36px; }
+}
+@media (max-width: 640px) {
+  :root { --gutter: 16px; }
+  html { scroll-padding-top: 72px; }
+  .nav { height: 60px; }
+  .nav-links { top: 60px; }
+  .brand-name { display: none; }
+  .hero { padding: 40px 0 72px; }
+  .hero .hero-title { font-size: 38px; }
+  .hero-position { font-size: 17px; }
+  .hero-position .sep { margin: 0 3px; }
+  .hero h1 { font-size: 40px; }
+  .hero-sub { font-size: 17px; }
+  .hero-ctas .btn { flex: 1 1 auto; }
+  .stage { grid-template-columns: 32px 1fr; }
+  .stage-tool { display: none; }
+  .metrics { margin-top: 56px; }
+  .metric { padding: 22px 18px; }
+  .metric-val { font-size: 32px; }
+  .section { padding: 72px 0; }
+  .section-head { margin-bottom: 40px; }
+  .lede { font-size: 16.5px; }
+  .about-copy p { font-size: 16.5px; }
+  .facts { grid-template-columns: 1fr; }
+  .skills-grid, .projects, .creds { grid-template-columns: 1fr; }
+  .skill.wide { grid-column: auto; }
+  .project, .project.featured, .panel { padding: 24px; }
+  .project.featured h3 { font-size: 24px; }
+  .outcome-val { font-size: 28px; }
+  .cstep { grid-template-columns: 1fr; gap: 4px; }
+  .canvases { grid-template-columns: 1fr 1fr; }
+  .canvases .cv:last-child { grid-column: 1 / -1; }
+  .stego-stats { grid-template-columns: 1fr 1fr 1fr; }
+  .stat .v { font-size: 15px; }
+  .resume-band { padding: 28px 24px; border-radius: 20px; }
+  .resume-actions .btn { flex: 1 1 auto; }
+  .contact-item { padding: 16px; grid-template-columns: 44px 1fr auto; gap: 14px; }
+  .contact-icon { width: 44px; height: 44px; }
+  .lc-detail { padding: 22px; }
+}
+</style>
+</head>
+<body class="no-js">
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Inline SVG sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    <symbol id="i-pin"viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 9 12 4 2 9l10 5 10-5Z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-infinity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.2 8.2a5.5 5.5 0 1 1 0 7.6L12 12l-6.2-3.8a5.5 5.5 0 1 0 0 7.6L12 12"/></symbol>
+    <symbol id="i-branch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="7" r="2"/><path d="M6 7v10"/><path d="M18 9c0 5-6 4-12 8"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 7-5 5 5 5"/><path d="m16 7 5 5-5 5"/><path d="m14 4-4 16"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/><path d="m9 15 2 2 4-4"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6Z"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3 6 1 1 2-2M3 12l1 1 2-2M3 18l1 1 2-2"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18.5 20a6.5 6.5 0 0 0-3-5.5"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14 -1.5 8 5-3 5 3-1.5-8"/></symbol>
+    <symbol id="i-cert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6l-8-3Z"/><path d="M8.5 11.5 11 14l4.5-5"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19.5 10 4 4 0 0 1 18 18H7Z"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-image"viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></symbol>
+  </defs>
+</svg>
+
+<header class="header" id="top">
+  <nav class="container nav" aria-label="Primary">
+    <a href="#top" class="brand" aria-label="Aditya Varma Dantuluri — home">
+      <span class="brand-mark" aria-hidden="true">AV</span>
+      <span class="brand-name">Aditya Varma Dantuluri</span>
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm" href="assets/Aditya-Varma-Dantuluri-Resume.pdf" download>
+        <svg aria-hidden="true"><use href="#i-download"/></svg><span class="btn-resume-text">Résumé</span><span class="sr-only"> (PDF)</span>
+      </a>
+      <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="intro" aria-labelledby="hero-title">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-tag rise"><span class="pill">5+ yrs</span> Enterprise delivery · Banking · Healthcare</div>
+        <h1 id="hero-title" class="hero-title rise rise-1">Aditya Varma Dantuluri<span class="crimson">.</span></h1>
+        <p class="hero-position rise rise-1">Release Management &amp; DevOps <span class="sep" aria-hidden="true">|</span> CI/CD <span class="sep" aria-hidden="true">|</span> <span class="accent">IT Security</span></p>
+        <p class="hero-sub rise rise-2">
+          I help enterprise teams deliver software releases reliably, with experience across <strong>banking and healthcare</strong> environments.
+          I've improved release success from <strong>73% to 98%</strong>, and I'm expanding my expertise in cybersecurity and AI-driven security automation.
+        </p>
+        <div class="hero-ctas rise rise-3">
+          <a class="btn btn-primary" href="assets/Aditya-Varma-Dantuluri-Resume.pdf" download>
+            <svg aria-hidden="true"><use href="#i-download"/></svg> Download résumé
+          </a>
+          <a class="btn btn-ghost" href="#projects">View projects <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <span class="hero-social">
+            <a class="icon-btn icon-btn-lg" href="https://www.linkedin.com/in/avd" target="_blank" rel="noopener me" aria-label="LinkedIn profile (opens in a new tab)"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+            <a class="icon-btn icon-btn-lg" href="https://github.com/systemaditya" target="_blank" rel="noopener me" aria-label="GitHub profile (opens in a new tab)"><svg aria-hidden="true"><use href="#i-github"/></svg></a>
+          </span>
+        </div>
+        <div class="hero-meta rise rise-3">
+          <span><svg aria-hidden="true"><use href="#i-pin"/></svg>Ajax, ON · Greater Toronto Area</span>
+          <span><svg aria-hidden="true"><use href="#i-cap"/></svg>Master of IT Security (AI), Ontario Tech</span>
+          <span><svg aria-hidden="true"><use href="#i-cert"/></svg>Microsoft Azure certified</span>
+        </div>
+      </div>
+
+      <aside class="card pipe rise rise-2" aria-label="Illustration of the release flow I manage">
+        <div class="pipe-head">
+          <div class="pipe-title"><span class="live" aria-hidden="true"></span>Release flow I manage</div>
+          <span class="pipe-env">banking · healthcare</span>
+        </div>
+        <ol class="stages" id="hero-stages">
+          <li class="stage"><span class="stage-dot" aria-hidden="true"><svg><use href="#i-check"/></svg></span><div><div class="stage-name">DEV</div><div class="stage-desc">Build &amp; CI pipelines</div></div><span class="stage-tool">Azure DevOps · Jenkins</span></li>
+          <li class="stage"><span class="stage-dot" aria-hidden="true"><svg><use href="#i-check"/></svg></span><div><div class="stage-name">SIT</div><div class="stage-desc">Automated deployment</div></div><span class="stage-tool">UrbanCode Deploy</span></li>
+          <li class="stage"><span class="stage-dot" aria-hidden="true"><svg><use href="#i-check"/></svg></span><div><div class="stage-name">UAT</div><div class="stage-desc">Business &amp; QA validation</div></div><span class="stage-tool">JIRA</span></li>
+          <li class="stage"><span class="stage-dot" aria-hidden="true"><svg><use href="#i-check"/></svg></span><div><div class="stage-name">PROD</div><div class="stage-desc">Approved change, go-live</div></div><span class="stage-tool">ServiceNow</span></li>
+        </ol>
+        <div class="pipe-foot">
+          <span class="pipe-foot-label">Governed by</span>
+          <span class="chips"><span class="chip">ITIL change management</span><span class="chip">HIPAA-compliant</span></span>
+        </div>
+      </aside>
+    </div>
+
+    <div class="metrics reveal" role="list" aria-label="Key results">
+      <div class="metric" role="listitem"><div class="metric-val"><span>5</span><small>+ yrs</small></div><p class="metric-label">Enterprise release, CI/CD &amp; DevOps experience</p></div>
+      <div class="metric" role="listitem"><div class="metric-val"><span data-count="98">98</span><small>%</small></div><p class="metric-label">Release success rate, up from 73%</p></div>
+      <div class="metric" role="listitem"><div class="metric-val"><span>0</span></div><p class="metric-label">Production issues across 3 consecutive quarters (2023)</p></div>
+      <div class="metric" role="listitem"><div class="metric-val"><span>2</span></div><p class="metric-label">Microsoft Azure certifications (AZ-204, AZ-900)</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Tools I work with: scrolling band (the second copy makes the loop seamless and is hidden from screen readers). -->
+<div class="marquee" role="region" aria-label="Tools and technologies">
+  <div class="marquee-track">
+    <ul class="marquee-group">
+      <li class="marquee-item">Azure DevOps</li><li class="marquee-item">Jenkins</li><li class="marquee-item">Bamboo</li><li class="marquee-item">UrbanCode Deploy</li><li class="marquee-item">GitHub</li><li class="marquee-item">SVN</li><li class="marquee-item">JIRA</li><li class="marquee-item">ServiceNow</li><li class="marquee-item">ITIL</li><li class="marquee-item">HIPAA compliance</li><li class="marquee-item">Python</li><li class="marquee-item">SQL</li><li class="marquee-item">Shell scripting</li><li class="marquee-item">OWASP ZAP</li><li class="marquee-item">Microsoft Azure</li>
+    </ul>
+    <ul class="marquee-group" aria-hidden="true">
+      <li class="marquee-item">Azure DevOps</li><li class="marquee-item">Jenkins</li><li class="marquee-item">Bamboo</li><li class="marquee-item">UrbanCode Deploy</li><li class="marquee-item">GitHub</li><li class="marquee-item">SVN</li><li class="marquee-item">JIRA</li><li class="marquee-item">ServiceNow</li><li class="marquee-item">ITIL</li><li class="marquee-item">HIPAA compliance</li><li class="marquee-item">Python</li><li class="marquee-item">SQL</li><li class="marquee-item">Shell scripting</li><li class="marquee-item">OWASP ZAP</li><li class="marquee-item">Microsoft Azure</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section class="section section-alt" id="about" aria-labelledby="about-title">
+  <div class="container about-grid">
+    <div class="about-copy">
+      <span class="eyebrow">About</span>
+      <h2 class="h2" id="about-title">Release discipline, now with a security lens.</h2>
+      <div style="margin-top:28px">
+        <p>I'm a technology professional with <strong>5+ years of enterprise experience</strong> in release management, CI/CD, deployment coordination and DevOps. I've run releases end to end across <strong>DEV, SIT, UAT and Production</strong>, coordinating development, QA, business, operations and project teams to get software out safely.</p>
+        <p>My work has been in regulated settings: <strong>ITIL and HIPAA-compliant</strong> environments for banking and healthcare clients. That's where I learned to plan for risk, manage dependencies and treat every production change as something to get right the first time.</p>
+        <p>I'm now pursuing a <strong>Master of IT Security, specializing in Artificial Intelligence</strong>, at Ontario Tech University, with a growing focus on cybersecurity, security automation and AI applications in security.</p>
+      </div>
+    </div>
+    <div class="edu reveal" data-delay="1">
+      <p class="edu-title">Education</p>
+      <article class="card edu-card">
+        <span class="edu-icon" aria-hidden="true"><svg><use href="#i-shield"/></svg></span>
+        <div>
+          <h3>Master of IT Security — Artificial Intelligence <span class="badge-now">in progress</span></h3>
+          <p class="org">Ontario Tech University</p>
+          <p class="when">2026 – 2028 (expected)</p>
+        </div>
+      </article>
+      <article class="card edu-card">
+        <span class="edu-icon" aria-hidden="true"><svg><use href="#i-cap"/></svg></span>
+        <div>
+          <h3>B.Sc. Design &amp; Computing</h3>
+          <p class="org">Birla Institute of Technology and Science, Pilani</p>
+          <p class="when">2021 – 2025</p>
+        </div>
+      </article>
+      <p class="edu-title" style="margin-top:18px">At a glance</p>
+      <dl class="facts">
+        <div class="fact"><dt>Industries</dt><dd>Banking · Healthcare</dd></div>
+        <div class="fact"><dt>Compliance</dt><dd>ITIL · HIPAA</dd></div>
+        <div class="fact"><dt>Environments</dt><dd>DEV → SIT → UAT → PROD</dd></div>
+        <div class="fact"><dt>Based in</dt><dd>Ajax, ON, Canada</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section" id="experience" aria-labelledby="exp-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Experience</span>
+      <h2 class="h2" id="exp-title">Five years at HCLTech, from build engineer to release lead.</h2>
+      <p class="lede">From building and deploying applications to owning the full release lifecycle and leading the engineers who run it.</p>
+    </div>
+
+    <div class="timeline">
+      <article class="card role reveal" data-expandable>
+        <div class="role-side">
+          <p class="when">Jan 2023 — Aug 2026</p>
+          <p class="company"><span class="company-logo" aria-hidden="true">HCL</span>HCLTech</p>
+          <p class="domain">Banking &amp; healthcare applications</p>
+        </div>
+        <div>
+          <h3>Release Manager</h3>
+          <ul class="role-list">
+            <li>Managed end-to-end software release lifecycles across DEV, SIT, UAT and Production for banking and healthcare applications.</li>
+            <li>Led and mentored Release Engineers, coordinating Development, QA, Business, Operations and Project Management teams.</li>
+            <li>Owned release planning, scheduling, change requests, approvals, deployment risks, dependencies and post-release activities.</li>
+            <li>Resolved production issues and deployment risks through structured root cause analysis and corrective actions.</li>
+            <li>Improved release success from 73% to 98% by optimizing release scheduling and the release process (<a class="inline-link" href="#projects">see the case study</a>).</li>
+          </ul>
+          <div class="role-tools">
+            <span class="label">Stack</span>
+            <span class="chip">Azure DevOps</span><span class="chip">Jenkins</span><span class="chip">UrbanCode Deploy</span><span class="chip">JIRA</span><span class="chip">ServiceNow</span><span class="chip">GitHub</span><span class="chip">SVN</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card role reveal" data-expandable>
+        <div class="role-side">
+          <p class="when">Jan 2021 — Dec 2022</p>
+          <p class="company"><span class="company-logo" aria-hidden="true">HCL</span>HCLTech</p>
+          <p class="domain">Agile &amp; DevOps delivery teams</p>
+        </div>
+        <div>
+          <h3>Build &amp; Release Engineer</h3>
+          <ul class="role-list">
+            <li>Managed application builds and deployments across DEV, SIT, UAT and Production environments.</li>
+            <li>Configured and supported CI/CD pipelines using Azure DevOps, Bamboo and UrbanCode Deploy.</li>
+            <li>Maintained version control and release traceability for source code and release artifacts in GitHub and SVN.</li>
+            <li>Troubleshot build and deployment failures, ran root cause analysis and coordinated fixes with technical teams.</li>
+            <li>Supported release planning, change management, deployment scheduling and post-deployment validation, tracked in JIRA and ServiceNow.</li>
+          </ul>
+          <div class="role-tools">
+            <span class="label">Stack</span>
+            <span class="chip">Azure DevOps</span><span class="chip">Bamboo</span><span class="chip">UrbanCode Deploy</span><span class="chip">GitHub</span><span class="chip">SVN</span><span class="chip">JIRA</span><span class="chip">ServiceNow</span>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="inline-cta reveal">
+      <p>Want the full picture? My résumé has the complete history.</p>
+      <a class="btn btn-ghost btn-sm" href="assets/Aditya-Varma-Dantuluri-Resume.pdf" download><svg aria-hidden="true"><use href="#i-download"/></svg> Download résumé</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section section-alt" id="skills" aria-labelledby="skills-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Skills &amp; technologies</span>
+      <h2 class="h2" id="skills-title">The toolkit behind every release.</h2>
+      <p class="lede">Pipeline tooling, release governance and a growing security practice, used daily in enterprise delivery.</p>
+    </div>
+    <div class="skills-grid">
+      <article class="card skill wide reveal">
+        <div class="skill-head"><span class="skill-icon" aria-hidden="true"><svg><use href="#i-infinity"/></svg></span><h3>DevOps &amp; CI/CD</h3></div>
+        <div class="chips"><span class="chip">Azure DevOps</span><span class="chip">Jenkins</span><span class="chip">Bamboo</span><span class="chip">UrbanCode Deploy (UCD)</span><span class="chip">CI/CD pipeline configuration</span><span class="chip">Build management</span><span class="chip">Deployment automation</span></div>
+      </article>
+      <article class="card skill reveal" data-delay="1">
+        <div class="skill-head"><span class="skill-icon" aria-hidden="true"><svg><use href="#i-branch"/></svg></span><h3>Version control</h3></div>
+        <div class="chips"><span class="chip">GitHub</span><span class="chip">SVN</span></div>
+      </article>
+      <article class="card skill wide reveal">
+        <div class="skill-head"><span class="skill-icon" aria-hidden="true"><svg><use href="#i-calendar"/></svg></span><h3>Release &amp; change management</h3></div>
+        <div class="chips"><span class="chip">Release planning</span><span class="chip">Change management</span><span class="chip">Deployment coordination</span><span class="chip">Release scheduling</span><span class="chip">Risk management</span><span class="chip">Root cause analysis</span></div>
+      </article>
+      <article class="card skill reveal" data-delay="1">
+        <div class="skill-head"><span class="skill-icon" aria-hidden="true"><svg><use href="#i-tool"/></svg></span><h3>Tools</h3></div>
+        <div class="chips"><span class="chip">JIRA</span><span class="chip">ServiceNow</span></div>
+      </article>
+      <article class="card skill reveal">
+        <div class="skill-head"><span class="skill-icon" aria-hidden="true"><svg><use href="#i-code"/></svg></span><h3>Programming &amp; security</h3></div>
+        <div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Shell scripting</span><span class="chip">IT security</span><span class="chip">Security automation</span><span class="chip">OWASP ZAP</span><span class="chip">Steganography</span></div>
+      </article>
+      <article class="card skill reveal" data-delay="1">
+        <div class="skill-head"><span class="skill-icon" aria-hidden="true"><svg><use href="#i-list"/></svg></span><h3>Methodologies</h3></div>
+        <div class="chips"><span class="chip">Agile</span><span class="chip">DevOps</span><span class="chip">ITIL</span><span class="chip">HIPAA compliance</span></div>
+      </article>
+      <article class="card skill reveal" data-delay="2">
+        <div class="skill-head"><span class="skill-icon" aria-hidden="true"><svg><use href="#i-users"/></svg></span><h3>Leadership</h3></div>
+        <div class="chips"><span class="chip">Team leadership</span><span class="chip">Stakeholder communication</span><span class="chip">Cross-functional collaboration</span><span class="chip">Process improvement</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section" id="projects" aria-labelledby="projects-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Projects &amp; case studies</span>
+      <h2 class="h2" id="projects-title">Proof of the work, not just the claims.</h2>
+      <p class="lede">Each project answers the same questions: what needed solving, what I owned, how I approached it, and what the evidence shows.</p>
+    </div>
+
+    <div class="projects">
+      <article class="card project featured reveal" data-topics="release-management ci-cd leadership compliance" data-expandable>
+        <div>
+          <div class="project-kicker"><span class="type">01 · Flagship case study</span><span>HCLTech · Release Manager · 2023–2026</span></div>
+          <h3>Enterprise release optimization</h3>
+          <p class="project-summary">Raising the release success rate for regulated banking and healthcare applications from 73% to 98%.</p>
+          <dl class="csteps">
+            <div class="cstep"><dt>Problem</dt><dd>Every release had to move through DEV, SIT, UAT and Production, coordinated across Development, QA, Business, Operations and Project Management. Release success stood at 73%.</dd></div>
+            <div class="cstep"><dt>My role</dt><dd>I owned release planning, scheduling, change requests, approvals, deployment risks, dependencies and post-release activities, and led and mentored the Release Engineers.</dd></div>
+            <div class="cstep"><dt>Constraints</dt><dd>ITIL change management and HIPAA-compliant environments, with five functions to align on every release.</dd></div>
+            <div class="cstep"><dt>Approach</dt><dd>Optimized release scheduling and improved the release process; ran structured root cause analysis on production issues and deployment risks, followed by corrective actions.</dd></div>
+            <div class="cstep"><dt>Tools</dt><dd>Azure DevOps, Jenkins, UrbanCode Deploy, ServiceNow, JIRA, GitHub, SVN.</dd></div>
+          </dl>
+        </div>
+        <div class="evidence">
+          <figure class="chart">
+            <figcaption class="chart-title"><span>Evidence</span>Release success rate</figcaption>
+            <div class="chart-plot" role="img" aria-label="Bar chart: release success rate rose from 73% before the process changes to 98% after.">
+              <span class="gridline" style="--y:100"><i>100%</i></span>
+              <span class="gridline" style="--y:50"><i>50%</i></span>
+              <span class="gridline" style="--y:0"><i>0%</i></span>
+              <div class="bars">
+                <div class="bar-v is-before" style="--h:73"><b>73%</b></div>
+                <div class="bar-v is-after" style="--h:98"><b>98%</b></div>
+              </div>
+            </div>
+            <div class="chart-labels" aria-hidden="true"><span>Before</span><span>After process changes</span></div>
+          </figure>
+          <div class="outcome-tile">
+            <p class="outcome-kicker">Separate result · 2023</p>
+            <div class="outcome-val">0 production issues</div>
+            <p class="outcome-label">Across three consecutive quarters in 2023, through release planning, coordination and risk management.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card project reveal" data-topics="security" data-expandable>
+        <div class="project-kicker"><span class="type">02 · Security assessment</span><span>BITS Pilani · Sep 2024 – Feb 2025</span></div>
+        <h3>Web application security assessment with OWASP ZAP</h3>
+        <p class="project-summary">Hands-on security testing of web applications to find common vulnerabilities and judge their impact.</p>
+        <dl class="csteps">
+          <div class="cstep"><dt>Problem</dt><dd>Learn how common web application vulnerabilities appear in practice, and how serious each one is.</dd></div>
+          <div class="cstep"><dt>Approach</dt><dd>Ran web application security testing with OWASP ZAP to identify and analyze common vulnerabilities.</dd></div>
+          <div class="cstep"><dt>Evidence</dt><dd>Analyzed each finding to understand its potential security impact.</dd></div>
+          <div class="cstep"><dt>Learned</dt><dd>A stronger, practical understanding of web application security testing.</dd></div>
+        </dl>
+        <div class="chips"><span class="chip">OWASP ZAP</span><span class="chip">Web app security</span><span class="chip">Vulnerability analysis</span></div>
+      </article>
+
+      <article class="card project reveal" data-delay="1" data-topics="security python" data-expandable>
+        <div class="project-kicker"><span class="type">03 · Security build</span><span>BITS Pilani · Apr 2023 – Jul 2023</span></div>
+        <h3>Image steganography with Python (LSB)</h3>
+        <p class="project-summary">An application that hides and retrieves information inside images using the Least Significant Bit technique.</p>
+        <dl class="csteps">
+          <div class="cstep"><dt>Built</dt><dd>A Python application to hide and retrieve information inside images.</dd></div>
+          <div class="cstep"><dt>Approach</dt><dd>Encoded and decoded data by modifying the least significant bits of image pixels, keeping visible changes to a minimum.</dd></div>
+          <div class="cstep"><dt>Applied</dt><dd>Information security, confidentiality, Python and image processing.</dd></div>
+        </dl>
+        <div class="chips"><span class="chip">Python</span><span class="chip">Image processing</span><span class="chip">Confidentiality</span></div>
+        <a class="project-link" href="#showcase" data-open-tab="tab-stego">Try the technique live <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+
+      <article class="card project featured reveal" data-topics="ai-security security python compliance" data-expandable>
+        <div>
+          <div class="project-kicker"><span class="type">04 · AI security red team</span><span>Personal project · Oct 2026</span></div>
+          <h3>Bank Copilot Red Team</h3>
+          <p class="project-summary">A banking AI assistant built to be attacked and then hardened, with attack success measured before and after on the same cases and documented as an OSFI E-23-style model-risk pack. Fictional bank, synthetic data; attacks run only against the local system.</p>
+          <dl class="csteps">
+            <div class="cstep"><dt>Problem</dt><dd>A system prompt that says “don't leak data” is a suggestion, not a control. The project measures how often prompt-only rules fail under attack, which fixes actually help, and what hardening costs in false refusals.</dd></div>
+            <div class="cstep"><dt>Built</dt><dd>Two assistants on a local LLM: a customer chat assistant (balances, fee and policy answers, transfers) and an internal email-triage assistant, where indirect prompt injection lives.</dd></div>
+            <div class="cstep"><dt>Controls</dt><dd>“The model proposes, plain code disposes”: account-ownership checks, a daily-limit policy engine, out-of-band transfer confirmation, an email allow-list and sender-only lookups enforced in code, with PII masking, untrusted-content marking, a prompt canary and answer-grounding layered on top.</dd></div>
+            <div class="cstep"><dt>Method</dt><dd>A 15-threat model mapped to the OWASP LLM Top 10 (2025). The red-team harness runs dev and held-out attack sets with defences off and on, scores benign tasks for false refusals, reports 95% confidence intervals, and includes an adaptive attacker that rewrites failed attacks.</dd></div>
+            <div class="cstep"><dt>Findings</dt><dd>Every category backed by a code-level control fell to 0%. Indirect injection is reduced, not solved: one held-out case still lands, with human review of every transfer and triage draft as the backstop. The self-conducted review recommends a limited pilot with conditions, not general release.</dd></div>
+            <div class="cstep"><dt>Engineering</dt><dd>Hash-chained audit log with SIN redaction; tests pin each baseline hole and the control that closes it; CI runs ruff and pytest on SQLite and PostgreSQL across Python 3.11–3.13.</dd></div>
+          </dl>
+          <div class="chips"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Ollama (llama3.2:3b)</span><span class="chip">SQLAlchemy</span><span class="chip">PostgreSQL</span><span class="chip">Docker Compose</span><span class="chip">pytest</span><span class="chip">OWASP LLM Top 10</span><span class="chip">RAG</span></div>
+          <div class="project-links">
+            <a class="project-link" href="https://github.com/systemaditya/bank-copilot-redteam" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg> View on GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="project-link" href="https://github.com/systemaditya/bank-copilot-redteam/releases/tag/v0.5.0" target="_blank" rel="noopener">Watch the demo (v0.5) <svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+          </div>
+        </div>
+        <div class="evidence">
+          <figure class="chart chart--four">
+            <figcaption class="chart-title"><span>Evidence · measured on llama3.2:3b</span>Attack success rate</figcaption>
+            <div class="chart-legend" aria-hidden="true"><span class="off">Defences off</span><span class="on">Defences on</span></div>
+            <div class="chart-plot" role="img" aria-label="Bar chart of attack success rate. Dev split: 33% with defences off, 0% with defences on. Held-out split: 25% with defences off, 12% with defences on.">
+              <span class="gridline" style="--y:100"><i>100%</i></span>
+              <span class="gridline" style="--y:50"><i>50%</i></span>
+              <span class="gridline" style="--y:0"><i>0%</i></span>
+              <div class="bars">
+                <div class="bar-v is-before" style="--h:33"><b>33%</b></div>
+                <div class="bar-v is-after" style="--h:0"><b>0%</b></div>
+                <div class="bar-v is-before" style="--h:25"><b>25%</b></div>
+                <div class="bar-v is-after" style="--h:12"><b>12%</b></div>
+              </div>
+            </div>
+            <div class="chart-labels" aria-hidden="true"><span>Dev · off</span><span>Dev · on</span><span>Held-out · off</span><span>Held-out · on</span></div>
+          </figure>
+          <div class="outcome-tile">
+            <p class="outcome-kicker">Read with care</p>
+            <div class="outcome-val">0% false refusals</div>
+            <p class="outcome-label">On benign dev tasks with defences on. Small model and small samples, so confidence intervals are wide; the review was done by the builder, as the repo notes.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SHOWCASE ================= -->
+<section class="section section-alt" id="showcase" aria-labelledby="showcase-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Work showcase</span>
+      <h2 class="h2" id="showcase-title">See how the work works.</h2>
+      <p class="lede">Two interactive walkthroughs: the release lifecycle I've managed, and a live demo of the LSB technique from my steganography project.</p>
+    </div>
+
+    <div class="tabs reveal" role="tablist" aria-label="Showcase">
+      <button class="tab" role="tab" id="tab-lifecycle" aria-controls="panel-lifecycle" aria-selected="true">Release lifecycle</button>
+      <button class="tab" role="tab" id="tab-stego" aria-controls="panel-stego" aria-selected="false" tabindex="-1">LSB steganography demo</button>
+    </div>
+
+    <div class="card panel reveal" role="tabpanel" id="panel-lifecycle" aria-labelledby="tab-lifecycle">
+      <div class="panel-intro">
+        <div>
+          <h3>What happens at each stage</h3>
+          <p>Select a stage to see my responsibilities and the tools involved. This is a simplified view of the enterprise release flow I've run.</p>
+        </div>
+        <span class="note">← → keys to move between stages</span>
+      </div>
+      <div class="lifecycle" role="tablist" aria-label="Release stages" id="lc-steps"></div>
+      <div class="lc-detail" id="lc-detail" role="tabpanel" aria-live="polite"></div>
+    </div>
+
+    <div class="card panel" role="tabpanel" id="panel-stego" aria-labelledby="tab-stego" hidden>
+      <div class="panel-intro">
+        <div>
+          <h3>Hide a message inside an image</h3>
+          <p>Your text is written into the least significant bit of each colour channel. Each pixel value changes by at most 1, which is invisible to the eye. Everything runs in your browser; nothing is uploaded.</p>
+        </div>
+        <span class="note">Interactive demo of the technique · built for this site</span>
+      </div>
+      <div class="stego">
+        <div class="stego-controls">
+          <label for="stego-msg">Secret message</label>
+          <textarea id="stego-msg" maxlength="2000" spellcheck="false">Release approved. Deploying to PROD at 02:00.</textarea>
+          <div class="cap" id="stego-cap"><span>0 bytes</span><span>capacity —</span></div>
+          <div class="stego-actions">
+            <button class="btn btn-accent btn-sm" id="stego-encode" type="button">Encode</button>
+            <button class="btn btn-ghost btn-sm" id="stego-decode" type="button">Decode image</button>
+            <label class="btn btn-ghost btn-sm file-label">
+              <svg aria-hidden="true"><use href="#i-image"/></svg> Use my image
+              <input type="file" id="stego-file" accept="image/png,image/jpeg,image/webp">
+            </label>
+          </div>
+          <div class="stego-out" id="stego-out" aria-live="polite"><span class="k">Decoded output</span><span id="stego-decoded">Encode a message, then decode it back.</span></div>
+          <div class="stego-notes">
+            <p class="k">Good to know</p>
+            <ul>
+              <li><b>Hiding is not encrypting.</b> LSB conceals that a message exists; anyone who knows the method can read it. Encrypt first for confidentiality.</li>
+              <li><b>Capacity</b> is 3 bits per pixel (R, G, B), minus a 4-byte length header.</li>
+              <li><b>Fragile:</b> lossy compression such as JPEG, resizing or filters destroy the hidden bits. Save as PNG.</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="canvases">
+            <div class="cv"><figure><canvas id="cv-cover" width="360" height="240" aria-label="Original cover image"></canvas><figcaption><b>Original</b>Cover image</figcaption></figure></div>
+            <div class="cv"><figure><canvas id="cv-stego" width="360" height="240" aria-label="Image with hidden message"></canvas><figcaption><b>With hidden message</b>Looks identical</figcaption></figure></div>
+            <div class="cv"><figure><canvas id="cv-diff" width="360" height="240" aria-label="Map of changed pixels"></canvas><figcaption><b>Changed pixels</b>Crimson = an LSB was flipped</figcaption></figure></div>
+          </div>
+          <div class="stego-stats">
+            <div class="stat"><div class="v" id="st-bits">—</div><div class="l">Bits written</div></div>
+            <div class="stat"><div class="v" id="st-flipped">—</div><div class="l">LSBs flipped</div></div>
+            <div class="stat"><div class="v" id="st-max">—</div><div class="l">Max pixel change</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CREDENTIALS ================= -->
+<section class="section" id="credentials" aria-labelledby="cred-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Achievements &amp; certifications</span>
+      <h2 class="h2" id="cred-title">Recognized for delivery, certified on Azure.</h2>
+    </div>
+    <div class="creds">
+      <article class="card cred reveal">
+        <span class="cred-icon is-award" aria-hidden="true"><svg><use href="#i-award"/></svg></span>
+        <p class="cred-type">Award · HCLTech</p>
+        <h3>Star Performer Award</h3>
+        <p>Recognized for work on the Franklin Templeton project.</p>
+      </article>
+      <article class="card cred reveal" data-delay="1">
+        <span class="cred-icon" aria-hidden="true"><svg><use href="#i-cloud"/></svg></span>
+        <p class="cred-type">Certification · Microsoft</p>
+        <h3>Microsoft Certified: Azure Developer Associate</h3>
+        <span class="code">AZ-204</span>
+        <a class="cred-link" href="https://learn.microsoft.com/api/credentials/share/en-us/AdityaVarmaDantuluri-5189/FF2FA516B82326F7?sharingId=C4B001FE9E05B9C2" target="_blank" rel="noopener">Verify on Microsoft Learn <svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg><span class="sr-only"> (AZ-204, opens in a new tab)</span></a>
+      </article>
+      <article class="card cred reveal" data-delay="2">
+        <span class="cred-icon" aria-hidden="true"><svg><use href="#i-cloud"/></svg></span>
+        <p class="cred-type">Certification · Microsoft</p>
+        <h3>Microsoft Certified: Azure Fundamentals</h3>
+        <span class="code">AZ-900</span>
+        <a class="cred-link" href="https://learn.microsoft.com/api/credentials/share/en-us/AdityaVarmaDantuluri-5189/478A1BFE521F0804?sharingId=C4B001FE9E05B9C2" target="_blank" rel="noopener">Verify on Microsoft Learn <svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg><span class="sr-only"> (AZ-900, opens in a new tab)</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESUME ================= -->
+<section class="section" id="resume" aria-labelledby="resume-title" style="padding-top:0">
+  <div class="container">
+    <div class="resume-band reveal">
+      <div>
+        <span class="eyebrow">Résumé</span>
+        <h2 id="resume-title">Everything above, in one PDF.</h2>
+        <p>Full work history, skills, projects and certifications, ready to share with your hiring team.</p>
+        <span class="resume-file"><svg width="16" height="16" aria-hidden="true"><use href="#i-file"/></svg>Aditya-Varma-Dantuluri-Resume.pdf · 3 pages</span>
+      </div>
+      <div class="resume-actions">
+        <a class="btn btn-light" href="assets/Aditya-Varma-Dantuluri-Resume.pdf" download><svg aria-hidden="true"><use href="#i-download"/></svg> Download PDF</a>
+        <a class="btn btn-outline" href="assets/Aditya-Varma-Dantuluri-Resume.pdf" target="_blank" rel="noopener">View online <svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section section-alt" id="contact" aria-labelledby="contact-title">
+  <div class="container contact-grid">
+    <div class="contact-copy reveal">
+      <span class="eyebrow">Contact</span>
+      <h2 class="h2" id="contact-title">Hiring for release, DevOps or security automation? Let's talk.</h2>
+      <p class="lede">Email is the fastest way to reach me. I'm based in the Greater Toronto Area.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="mailto:varmadantuluri510@gmail.com?subject=Opportunity%20for%20Aditya%20Varma%20Dantuluri"><svg aria-hidden="true"><use href="#i-mail"/></svg> Email me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/avd" target="_blank" rel="noopener me"><svg aria-hidden="true"><use href="#i-linkedin"/></svg> Connect on LinkedIn</a>
+      </div>
+    </div>
+    <div class="contact-list reveal" data-delay="1">
+      <div class="card contact-item">
+        <span class="contact-icon" aria-hidden="true"><svg><use href="#i-mail"/></svg></span>
+        <div><p class="k">Email</p><p class="v"><a href="mailto:varmadantuluri510@gmail.com">varmadantuluri510@gmail.com</a></p></div>
+        <button class="icon-btn copy-btn" type="button" id="copy-email" data-copy="varmadantuluri510@gmail.com" aria-label="Copy email address">
+          <svg aria-hidden="true"><use href="#i-copy"/></svg><span class="toast" role="status">Copied</span>
+        </button>
+      </div>
+      <a class="card contact-item" href="https://www.linkedin.com/in/avd" target="_blank" rel="noopener me">
+        <span class="contact-icon" aria-hidden="true"><svg><use href="#i-linkedin"/></svg></span>
+        <div><p class="k">LinkedIn</p><p class="v">linkedin.com/in/avd</p></div>
+        <span class="go" aria-hidden="true"><svg><use href="#i-arrow-up-right"/></svg></span><span class="sr-only">(opens in a new tab)</span>
+      </a>
+      <a class="card contact-item" href="https://github.com/systemaditya" target="_blank" rel="noopener me">
+        <span class="contact-icon" aria-hidden="true"><svg><use href="#i-github"/></svg></span>
+        <div><p class="k">GitHub</p><p class="v">github.com/systemaditya</p></div>
+        <span class="go" aria-hidden="true"><svg><use href="#i-arrow-up-right"/></svg></span><span class="sr-only">(opens in a new tab)</span>
+      </a>
+      <a class="card contact-item" href="assets/Aditya-Varma-Dantuluri-Resume.pdf" download>
+        <span class="contact-icon" aria-hidden="true"><svg><use href="#i-file"/></svg></span>
+        <div><p class="k">Résumé</p><p class="v">Download PDF</p></div>
+        <span class="go" aria-hidden="true"><svg><use href="#i-download"/></svg></span>
+      </a>
+      <div class="card contact-item">
+        <span class="contact-icon" aria-hidden="true"><svg><use href="#i-pin"/></svg></span>
+        <div><p class="k">Location</p><p class="v">Ajax, Ontario, Canada</p></div>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Mobile-only quick actions; shown after the hero, hidden once the contact section is on screen. -->
+<nav class="mobile-cta" id="mobile-cta" aria-label="Quick contact" hidden>
+  <a class="btn btn-primary btn-sm" href="mailto:varmadantuluri510@gmail.com?subject=Opportunity%20for%20Aditya%20Varma%20Dantuluri"><svg aria-hidden="true"><use href="#i-mail"/></svg> Email me</a>
+  <a class="btn btn-ghost btn-sm" href="assets/Aditya-Varma-Dantuluri-Resume.pdf" download><svg aria-hidden="true"><use href="#i-download"/></svg> Résumé</a>
+</nav>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <p>© <span id="year">2026</span> Aditya Varma Dantuluri</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/avd" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/systemaditya" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:varmadantuluri510@gmail.com">Email</a>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  document.body.classList.remove('no-js');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* Theme */
+  var root = document.documentElement;
+  var mq = window.matchMedia('(prefers-color-scheme: dark)');
+  function isDark() { return root.dataset.theme ? root.dataset.theme === 'dark' : mq.matches; }
+  var themeBtn = $('#theme-toggle');
+  function syncThemeLabel() { themeBtn.setAttribute('aria-label', isDark() ? 'Switch to light mode' : 'Switch to dark mode'); }
+  syncThemeLabel();
+  themeBtn.addEventListener('click', function () {
+    root.dataset.theme = isDark() ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+    syncThemeLabel();
+    if (window.__redrawStego) window.__redrawStego();
+  });
+
+  /* Header + mobile menu */
+  var header = $('.header');
+  function onScroll() { header.classList.toggle('scrolled', window.scrollY > 8); }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+  var menuBtn = $('#menu-btn'), links = $('#nav-links');
+  function setMenu(open) { links.classList.toggle('open', open); menuBtn.setAttribute('aria-expanded', String(open)); menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); }
+  menuBtn.addEventListener('click', function () { setMenu(!links.classList.contains('open')); });
+  $$('a', links).forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+
+  /* Scroll spy */
+  var navMap = {};
+  $$('a', links).forEach(function (a) { navMap[a.getAttribute('href').slice(1)] = a; });
+  // Sections without their own nav item highlight their parent item.
+  navMap.skills = navMap.experience; navMap.showcase = navMap.projects; navMap.resume = navMap.credentials;
+  if ('IntersectionObserver' in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          $$('a', links).forEach(function (a) { a.classList.remove('active'); a.removeAttribute('aria-current'); });
+          var a = navMap[en.target.id]; if (a) { a.classList.add('active'); a.setAttribute('aria-current', 'true'); }
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    Object.keys(navMap).forEach(function (id) { var s = document.getElementById(id); if (s) spy.observe(s); });
+  }
+
+  /* Mobile quick actions: visible between the hero and the contact section. */
+  var mcta = $('#mobile-cta');
+  if (mcta && 'IntersectionObserver' in window) {
+    mcta.hidden = false;
+    var past = false, atContact = false;
+    function syncCta() { mcta.classList.toggle('show', past && !atContact); }
+    new IntersectionObserver(function (e) { past = !e[0].isIntersecting; syncCta(); }).observe($('.hero'));
+    new IntersectionObserver(function (e) { atContact = e[0].isIntersecting; syncCta(); }).observe($('#contact'));
+  }
+
+  /* Reveal + count-up */
+  function countUp(el) {
+    var target = +el.dataset.count; if (reduce || !target) return;
+    var start = null, dur = 1200;
+    function step(t) { if (!start) start = t; var p = Math.min((t - start) / dur, 1); el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step); }
+    el.textContent = '0'; requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        en.target.classList.add('in');
+        $$('[data-count]', en.target).forEach(countUp);
+        io.unobserve(en.target);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    $$('.reveal').forEach(function (el) { io.observe(el); });
+  } else {
+    $$('.reveal').forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* Hero pipeline animation */
+  var stages = $$('#hero-stages .stage');
+  if (reduce) {
+    stages.forEach(function (s) { s.classList.add('done'); });
+  } else {
+    var i = 0;
+    function tick() {
+      stages.forEach(function (s, k) { s.classList.toggle('done', k < i); s.classList.toggle('active', k === i); });
+      i = (i + 1) % (stages.length + 2);
+      setTimeout(tick, i === 1 ? 900 : 1100);
+    }
+    setTimeout(tick, 600);
+  }
+
+  /* Showcase tabs */
+  var tabs = $$('#showcase .tabs .tab');
+  function selectTab(tab, focus) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', String(on)); t.tabIndex = on ? 0 : -1;
+      var p = document.getElementById(t.getAttribute('aria-controls'));
+      p.hidden = !on; if (on) { p.classList.add('in'); }
+    });
+    if (focus) tab.focus();
+    if (tab.id === 'tab-stego' && window.__initStego) window.__initStego();
+  }
+  tabs.forEach(function (t, idx) {
+    t.addEventListener('click', function () { selectTab(t); });
+    t.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault(); selectTab(tabs[(idx + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length], true);
+      }
+    });
+  });
+  $$('[data-open-tab]').forEach(function (a) {
+    a.addEventListener('click', function () { selectTab(document.getElementById(a.dataset.openTab)); });
+  });
+
+  /* Release lifecycle explorer (content drawn from the résumé) */
+  var LC = [
+    { k: 'DEV', sub: 'Build & CI', title: 'Builds and CI pipelines',
+      what: ['Manage application builds and keep CI/CD pipelines healthy.', 'Configure pipelines in Azure DevOps, Jenkins and Bamboo.', 'Maintain version control and release traceability for code and artifacts.'],
+      tools: ['Azure DevOps', 'Jenkins', 'Bamboo', 'GitHub', 'SVN'],
+      gate: '<b>Exit criteria:</b> a traceable, versioned build ready to promote.' },
+    { k: 'SIT', sub: 'Integration', title: 'Automated deployment and integration',
+      what: ['Automate deployments with UrbanCode Deploy.', 'Coordinate build and deployment activities with Development and QA.', 'Troubleshoot failed builds and deployments with root cause analysis.'],
+      tools: ['UrbanCode Deploy', 'Azure DevOps', 'JIRA'],
+      gate: '<b>Exit criteria:</b> integrated build deployed cleanly; failures root-caused and fixed.' },
+    { k: 'UAT', sub: 'Validation', title: 'Business and QA validation',
+      what: ['Coordinate Business, QA and Project Management teams for sign-off.', 'Own release scheduling and track dependencies across teams.', 'Track release tasks and readiness in JIRA.'],
+      tools: ['JIRA', 'ServiceNow'],
+      gate: '<b>Exit criteria:</b> business sign-off with dependencies and risks understood.' },
+    { k: 'PROD', sub: 'Go-live', title: 'Approved change, controlled go-live',
+      what: ['Raise and drive change requests and approvals in ServiceNow.', 'Manage deployment risks and dependencies under ITIL and HIPAA requirements.', 'Coordinate Operations for the production implementation.'],
+      tools: ['ServiceNow', 'UrbanCode Deploy', 'ITIL'],
+      gate: '<b>Exit criteria:</b> change approved, risks and dependencies cleared, Operations ready.' },
+    { k: 'POST', sub: 'Learn', title: 'Post-release validation and improvement',
+      what: ['Run post-deployment validation and post-release activities.', 'Lead root cause analysis and corrective actions for any issue.', 'Feed lessons back into scheduling and process.'],
+      tools: ['ServiceNow', 'JIRA'],
+      gate: '<b>Exit criteria:</b> release validated; any issue root-caused with corrective actions.' }
+  ];
+  var lcWrap = $('#lc-steps'), lcDetail = $('#lc-detail'), lcBtns = [];
+  function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+  function showLC(n, focus) {
+    var d = LC[n];
+    lcBtns.forEach(function (b, k) { b.setAttribute('aria-selected', String(k === n)); b.tabIndex = k === n ? 0 : -1; });
+    lcDetail.setAttribute('aria-labelledby', 'lc-' + n);
+    lcDetail.innerHTML =
+      '<div><h4>' + esc(d.title) + '</h4><ul class="lc-what">' + d.what.map(function (w) { return '<li>' + esc(w) + '</li>'; }).join('') + '</ul></div>' +
+      '<div class="lc-side"><p class="label">Tools &amp; frameworks</p><div class="chips">' + d.tools.map(function (t) { return '<span class="chip">' + esc(t) + '</span>'; }).join('') + '</div><p class="gate">' + d.gate + '</p></div>';
+    lcDetail.classList.remove('fade-swap'); void lcDetail.offsetWidth; lcDetail.classList.add('fade-swap');
+    if (focus) lcBtns[n].focus();
+  }
+  LC.forEach(function (d, n) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'lc-step'; b.id = 'lc-' + n; b.setAttribute('role', 'tab'); b.setAttribute('aria-controls', 'lc-detail');
+    b.innerHTML = '<div class="lc-num">0' + (n + 1) + '</div><div class="lc-name">' + d.k + '</div><div class="lc-sub">' + esc(d.sub) + '</div>';
+    b.addEventListener('click', function () { showLC(n); });
+    b.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') { e.preventDefault(); showLC((n + 1) % LC.length, true); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); showLC((n + LC.length - 1) % LC.length, true); }
+    });
+    lcWrap.appendChild(b); lcBtns.push(b);
+  });
+  showLC(0);
+
+  /* Copy email */
+  var copyBtn = $('#copy-email');
+  copyBtn.addEventListener('click', function () {
+    var toast = $('.toast', copyBtn), text = copyBtn.dataset.copy;
+    function done() { toast.classList.add('show'); setTimeout(function () { toast.classList.remove('show'); }, 1600); }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, function () {});
+    else { var ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); done(); } catch (e) {} ta.remove(); }
+  });
+
+  /* LSB steganography demo */
+  (function () {
+    var W = 360, H = 240, ready = false, hasStego = false, coverData = null;
+    var cvCover = $('#cv-cover'), cvStego = $('#cv-stego'), cvDiff = $('#cv-diff');
+    var cC = cvCover.getContext('2d', { willReadFrequently: true });
+    var cS = cvStego.getContext('2d', { willReadFrequently: true });
+    var cD = cvDiff.getContext('2d');
+    var msg = $('#stego-msg'), cap = $('#stego-cap'), out = $('#stego-decoded');
+    var enc = new TextEncoder(), dec = new TextDecoder('utf-8', { fatal: true });
+
+    function capacityBytes() { return Math.floor(W * H * 3 / 8) - 4; }
+
+    function drawDefaultCover() {
+      // Procedural cover: soft gradient sky, hills and a sun — enough texture to make the point.
+      var g = cC.createLinearGradient(0, 0, 0, H);
+      g.addColorStop(0, '#2a2a2d'); g.addColorStop(.5, '#7a3b45'); g.addColorStop(1, '#f2b8a0');
+      cC.fillStyle = g; cC.fillRect(0, 0, W, H);
+      cC.fillStyle = 'rgba(220,20,60,.85)'; cC.beginPath(); cC.arc(268, 92, 30, 0, Math.PI * 2); cC.fill();
+      var layers = [['#2f6b47', 170, 28], ['#1f5e3b', 190, 22], ['#16301f', 212, 16]];
+      layers.forEach(function (l, idx) {
+        cC.fillStyle = l[0]; cC.beginPath(); cC.moveTo(0, H);
+        for (var x = 0; x <= W; x += 6) cC.lineTo(x, l[1] - Math.sin(x / (40 + idx * 18) + idx) * l[2] - Math.cos(x / 23) * 4);
+        cC.lineTo(W, H); cC.closePath(); cC.fill();
+      });
+      // Fine grain so neighbouring pixels differ, as in a real photo.
+      var id = cC.getImageData(0, 0, W, H), d = id.data, seed = 7;
+      for (var i = 0; i < d.length; i += 4) { seed = (seed * 16807) % 2147483647; var n = (seed % 9) - 4; d[i] += n; d[i + 1] += n; d[i + 2] += n; }
+      cC.putImageData(id, 0, 0);
+    }
+
+    function setCoverFromImage(img) {
+      var r = Math.max(W / img.width, H / img.height), w = img.width * r, h = img.height * r;
+      cC.clearRect(0, 0, W, H); cC.drawImage(img, (W - w) / 2, (H - h) / 2, w, h);
+      var id = cC.getImageData(0, 0, W, H); for (var i = 3; i < id.data.length; i += 4) id.data[i] = 255; cC.putImageData(id, 0, 0);
+      afterCover();
+    }
+
+    function afterCover() {
+      coverData = cC.getImageData(0, 0, W, H);
+      cS.putImageData(coverData, 0, 0);
+      clearDiff(); hasStego = false;
+      $('#st-bits').textContent = '—'; $('#st-flipped').textContent = '—'; $('#st-max').textContent = '—';
+      out.textContent = 'Encode a message, then decode it back.';
+      updateCap();
+    }
+
+    function clearDiff() {
+      cD.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--surface-2').trim() || '#111';
+      cD.fillRect(0, 0, W, H);
+    }
+
+    function updateCap() {
+      var n = enc.encode(msg.value).length, c = capacityBytes();
+      cap.children[0].textContent = n + ' bytes';
+      cap.children[1].textContent = 'capacity ' + c.toLocaleString() + ' bytes';
+      cap.classList.toggle('over', n > c);
+    }
+
+    function encode() {
+      var bytes = enc.encode(msg.value), c = capacityBytes();
+      if (bytes.length > c) { out.textContent = 'Message is larger than this image can hold.'; return; }
+      var payload = new Uint8Array(4 + bytes.length);
+      new DataView(payload.buffer).setUint32(0, bytes.length);
+      payload.set(bytes, 4);
+      var stego = new ImageData(new Uint8ClampedArray(coverData.data), W, H), d = stego.data;
+      var totalBits = payload.length * 8, flipped = 0, p = 0;
+      for (var b = 0; b < totalBits; b++) {
+        if ((p & 3) === 3) p++; // skip alpha channel
+        var bit = (payload[b >> 3] >> (7 - (b & 7))) & 1;
+        var nv = (d[p] & 0xFE) | bit;
+        if (nv !== d[p]) flipped++;
+        d[p] = nv; p++;
+      }
+      cS.putImageData(stego, 0, 0);
+      // Difference map: amplify any pixel with a changed channel.
+      var diff = cD.createImageData(W, H), dd = diff.data, o = coverData.data, dark = isDark();
+      for (var i = 0; i < dd.length; i += 4) {
+        var ch = o[i] !== d[i] || o[i + 1] !== d[i + 1] || o[i + 2] !== d[i + 2];
+        if (ch) { dd[i] = 220; dd[i + 1] = 20; dd[i + 2] = 60; }
+        else if (dark) { dd[i] = 36; dd[i + 1] = 36; dd[i + 2] = 39; }
+        else { dd[i] = 244; dd[i + 1] = 244; dd[i + 2] = 241; }
+        dd[i + 3] = 255;
+      }
+      cD.putImageData(diff, 0, 0);
+      hasStego = true;
+      $('#st-bits').textContent = totalBits.toLocaleString();
+      $('#st-flipped').textContent = flipped.toLocaleString();
+      $('#st-max').textContent = flipped ? '±1 / 255' : '0';
+      out.textContent = 'Message hidden. Press “Decode image” to read it back from the pixels.';
+    }
+
+    function decode() {
+      var d = cS.getImageData(0, 0, W, H).data, p = 0;
+      function readByte() { var v = 0; for (var k = 0; k < 8; k++) { if ((p & 3) === 3) p++; v = (v << 1) | (d[p] & 1); p++; } return v; }
+      var len = ((readByte() << 24) | (readByte() << 16) | (readByte() << 8) | readByte()) >>> 0;
+      if (!hasStego || len > capacityBytes()) { out.textContent = 'No hidden message found in this image yet.'; return; }
+      var bytes = new Uint8Array(len); for (var i = 0; i < len; i++) bytes[i] = readByte();
+      try { out.textContent = dec.decode(bytes) || '(empty message)'; } catch (e) { out.textContent = 'No readable message found.'; }
+    }
+
+    window.__initStego = function () {
+      if (ready) return; ready = true;
+      drawDefaultCover(); afterCover(); encode();
+    };
+    window.__redrawStego = function () { if (ready && hasStego) encode(); else if (ready) clearDiff(); };
+
+    msg.addEventListener('input', updateCap);
+    $('#stego-encode').addEventListener('click', encode);
+    $('#stego-decode').addEventListener('click', decode);
+    $('#stego-file').addEventListener('change', function (e) {
+      var f = e.target.files && e.target.files[0]; if (!f) return;
+      var url = URL.createObjectURL(f), img = new Image();
+      img.onload = function () { setCoverFromImage(img); URL.revokeObjectURL(url); };
+      img.src = url;
+    });
+  })();
+})();
+</script>
+<!-- Progressive enhancements: the page is complete without them. -->
+<script src="assets/interactions.js" defer></script>
+<script src="assets/motion.js" defer></script>
+</body>
+</html>

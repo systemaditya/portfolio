@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aditya-varma-dantuluri.vercel.app/sitemap.xml
